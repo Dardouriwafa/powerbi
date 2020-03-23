@@ -26,3 +26,5 @@ steps:
     Contents: '**'
     TargetFolder: '${BuildArtifactStagingDirectory}'
     OverWrite: true
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
