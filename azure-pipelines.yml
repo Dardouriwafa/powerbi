@@ -21,13 +21,6 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: 'master/Dardouriwafa/powerbi/Exemple-Rapport-PBI-AzureConso.pbix'
-    Contents: '**'
-    TargetFolder: 'master/Report'
-    OverWrite: true
      
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
