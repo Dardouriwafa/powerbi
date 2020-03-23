@@ -25,7 +25,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: 'master/Dardouriwafa/powerbi/Exemple-Rapport-PBI-AzureConso.pbix'
-    Contents: ''
+    Contents: '**'
     TargetFolder: 'master/Report'
     OverWrite: true
      
