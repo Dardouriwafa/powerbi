@@ -24,9 +24,9 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(System.DefaultWorkingDirectory)/drop/drop/Exemple-Rapport-PBI-AzureConso.pbix'
+    SourceFolder: 'master/Exemple-Rapport-PBI-AzureConso.pbix'
     Contents: '**'
-    TargetFolder: 'Rapport'
+    TargetFolder: 'master/Report'
     OverWrite: true
      
 - task: PublishBuildArtifacts@1
