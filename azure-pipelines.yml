@@ -23,7 +23,6 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copy Files to: Staging Artifact'
   inputs:
-    SourceFolder: Reports
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     OverWrite: true
      
