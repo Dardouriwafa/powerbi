@@ -21,10 +21,11 @@ steps:
   displayName: 'Run a multi-line script'
 
 - task: CopyFiles@2
+  displayName: 'Copy Files to: Staging Artifact'
   inputs:
-    SourceFolder: 'Exemple-Rapport-PBI-AzureConso.pbix'
-    Contents: '**'
-    TargetFolder: '${BuildArtifactStagingDirectory}'
+    SourceFolder: Reports
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
     OverWrite: true
+     
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
