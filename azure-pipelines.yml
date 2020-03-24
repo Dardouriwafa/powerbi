@@ -26,10 +26,6 @@ steps:
     SourceFolder: Report
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     OverWrite: true
-- task: CopyFiles@2
-  inputs:
-    Contents: '**'
-    TargetFolder: 
      
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
